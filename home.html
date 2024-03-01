@@ -1,0 +1,98 @@
+<!doctype HTML>
+<html>
+<head>
+  <!--Describe the character set for the web page-->
+<meta charset="utf-8">
+<!---keywords for the search engine--->
+<meta name="keywords" content="HTML 5 CSS 3 JAVASCRIPT">
+<!--Description for the web page-->
+<meta name="description" content="Dynamic Web Development">
+<!--Author of the page-->
+<meta name="author" content="Anagha">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<!---Defines the title for the page--->
+<title>SpotSalon</title>
+</head>
+
+<body>
+    <section class="row">
+        <header>
+            <h1 id="animate">SpotSalon</h1>
+        </header>
+        <nav class="col-12">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+               <!-- <li><a href="pages/users.html">Users</a></li>contains dropdown menu to sign up of admin and business account-->
+                
+                <li class="navitem">
+                    <a href="#">Users</a>
+                        <ul>
+                            <li><a href="pages/signin-business-account.html">Business Account</a></li>
+                            <li><a href="pages/signin-admin.html">Admin</a></li>
+                        </ul>   
+                </li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav></section>
+        <section>
+        <article class="col-6">
+            <img src="images/salon1.jpg" alt="Salon image" id="imageproperty">
+            <h2 id="articleh2">Spot your nearby Salon</h2>
+            <form action="pages/customer-display.html" method="post" autocomplete="off">
+                
+                <fieldset class="homearticlefieldset">
+                    <!--<legend>Spot your nearby Salon</legend>-->
+                <label for="country">Country: &nbsp;</label>
+                <select name="country" id="country">
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                </select><br/><br>
+                <label for="state">State: &nbsp;</label> 
+                <select name="country" id="country">
+                    <option value="a">aa</option>
+                    <option value="b">bb</option>
+                    <option value="c">cc</option>
+                </select> <br> <br>
+                <label for="city">City: &nbsp;</label>  
+                <select name="country" id="country">
+                    <option value="a">aaa</option>
+                    <option value="b">bbb</option>
+                    <option value="c">ccc</option>
+                </select><br/><br>
+               <!-- <input type="button" value="Search" id="allbuttons">-->
+                <button type="submit" id="allbuttons">Search</button>
+            </fieldset>
+            </form>
+        </article>
+        <aside class="col-6">
+            <img src="images/staff3.jpeg" alt="Staff image" id="imageproperty">
+            <form action="pages/business-profile.html" method="post" name="businesssignin" onsubmit=" return validatebusinesssignin();" autocomplete="off">
+                <h2 id="articleh2">SpotSalon Business Account</h2>
+                <fieldset class="salonsignin">
+                    <!--<legend>SpotSalon Account</legend>-->
+                    <span id="usernamepwderr"></span><br>
+                    <label for="username">Username</label>
+                    <input type="email" name="username" id="username"><br><br>
+                    <label for="pwd">Password</label>
+                    <input type="password" name="pwd" id="pwd"><br>
+                    
+                    Forgot Password? <a href="#">Click here</a><br></br>
+                    <!--<input type="submit" value="Sign In" id="allbuttons">-->
+                    <button type="submit" id="allbuttons">Sign In</button>
+                    <div class="rgtnlink">
+                        <a href="pages/owner-registration.html">Sign Up your Business to the SpotSalon?</a>
+                    </div>
+                </fieldset>
+            </form>
+            
+
+        </aside>
+        <!--<footer></footer>-->
+    </section>
+    <script src="scripts/validatebusinessinfo.js"></script>
+</body>

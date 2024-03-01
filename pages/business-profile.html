@@ -1,0 +1,81 @@
+<!doctype HTML>
+<html>
+<head>
+  <!--Describe the character set for the web page-->
+<meta charset="utf-8">
+<!---keywords for the search engine--->
+<meta name="keywords" content="HTML 5 CSS 3 JAVASCRIPT">
+<!--Description for the web page-->
+<meta name="description" content="Dynamic Web Development">
+<!--Author of the page-->
+<meta name="author" content="Anagha">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<script src="../scripts/validatebusinessinfo.js"></script>
+<!---Defines the title for the page--->
+<title>SpotSalon</title>
+
+<style>
+    span
+    {
+        color: red;
+    }
+</style>
+</head>
+
+<body>
+    <section class="row">
+        <header>
+            <h1 id="animate">SpotSalon</h1>
+        </header>
+        <nav class="col-12">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="users.html">Users</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+       <!-- <article class="col-3">
+            <img src="../images/staff3.jpeg" alt="Staff image" id="imageproperty">
+            
+        </article>-->
+        <aside class="col-12">
+            <img src="../images/staff3.jpeg" alt="Staff image" id="imageproperty">
+            <h2 id="articleh2">Welcome Page for Business Account</h2>
+            <h3> Services Coming Soon......</h3>
+            <form action="pages/business-account.html" method="post" name="businessinfo" onsubmit= "return validatebusinessinfo();" autocomplete="off">
+                
+                <fieldset class="owner-registration-asidefieldset">
+                    <legend>Fill up the Form</legend>
+                    <label for="businessname">Business Name: &nbsp;</label><br>
+                        <input type="text" name="businessname" id="businessname"><span id="businessnameerr"></span><br><br> 
+                    <label for="registrationno">Registration No: &nbsp;</label><br>
+                        <input type="text" name="registrationno" id="registrationno"><span id="registrationnoerr"></span><br><br>
+                    <label for="email">Email : &nbsp;</label><br>
+                        <input type="email" name="email" id="email"><span id="emailerr"></span><br><br>
+                    <label for="phone">Phone No: &nbsp;</label><br>
+                        <input type="tel" name="phone" id="phone" placeholder="1234-567-8912" 
+                        pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"><span id="phoneerr"></span><br><br>
+                    <label for="businessaddress">BusinessAddress :&nbsp;</label><br>
+                        <textarea name="businessaddress" id="businessaddress" cols="30" rows="10"></textarea><br><br>
+                    <label for="country">Country: &nbsp;</label><br>
+                        <input type="text" name="country" id="country" ><span id="countryerr"></span><br><br>
+                    <label for="state">State: &nbsp;</label>   <br>
+                        <input type="text" name="state" id="state"><span id="stateerr"></span><br><br>
+                    <label for="city">City: &nbsp;</label>  <br>
+                        <input type="text" name="city" id="city" ><span id="cityerr"></span><br><br>
+                    <label for="rdate">Date: &nbsp;</label><br>
+                        <input type="date" name="rdate" id="rdate"><span id="dateerr"></span><br><br>
+                    
+                    <!--<input type="submit" name="Register" id=" allbuttons">-->
+                    <button type="submit" id="allbuttons">Update</button>
+            </fieldset>
+            </form>
+        </aside>
+       
+        <!--<footer></footer>->
+
+    </section>
+</body>
